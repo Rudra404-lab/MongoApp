@@ -43,5 +43,3 @@ sidebar_css = """
 </style>
 """
 st.markdown(sidebar_css, unsafe_allow_html=True)
-b2=st.button("SIGNUP")
-
