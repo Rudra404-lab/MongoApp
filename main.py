@@ -1,8 +1,14 @@
 import streamlit as st
 import pymongo
 conn=pymongo.MongoClient("mongodb+srv://rudra1951:<db_password>@cluster0.e1nvcku.mongodb.net/?appName=Cluster0")
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
 mydb=conn["ojt"]
 my=mydb["user_info"]
+
 st.title("🐍All the basic python code")
 st.snow()
 
@@ -38,5 +44,4 @@ sidebar_css = """
 """
 st.markdown(sidebar_css, unsafe_allow_html=True)
 b2=st.button("SIGNUP")
-if b2:
-       st.switch_page("Pages/a_signup.py")
+
