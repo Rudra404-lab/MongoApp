@@ -1,5 +1,5 @@
 import streamlit as st
-import pymongo
+from pymongo import MongoClient
 conn=pymongo.MongoClient("mongodb+srv://rudra1951:RudraPass05@cluster0.d2v3ft8.mongodb.net/?appName=Cluster0")
 mydb=conn["ojt"]
 my=mydb["user_info"]
