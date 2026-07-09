@@ -37,3 +37,6 @@ sidebar_css = """
 </style>
 """
 st.markdown(sidebar_css, unsafe_allow_html=True)
+b2=st.button("SIGNUP")
+if b2:
+       st.switch_page("Paages/a_signup.py")
