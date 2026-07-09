@@ -1,11 +1,6 @@
 import streamlit as st
 import pymongo
-conn=pymongo.MongoClient("mongodb+srv://rudra1951:<db_password>@cluster0.e1nvcku.mongodb.net/?appName=Cluster0")
-try:
-    client.admin.command('ping')
-    print("Pinged your deployment. You successfully connected to MongoDB!")
-except Exception as e:
-    print(e)
+conn=pymongo.MongoClient("mongodb+srv://rudra1951:RudraPass05@cluster0.e1nvcku.mongodb.net/?appName=Cluster0")
 mydb=conn["ojt"]
 my=mydb["user_info"]
 
