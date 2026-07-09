@@ -1,6 +1,6 @@
 import streamlit as st
 import pymongo
-conn=pymongo.MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.2")
+conn=pymongo.MongoClient("mongodb+srv://rudra1951:<RudraPass05@>@cluster0.d2v3ft8.mongodb.net/?appName=Cluster0")
 mydb=conn["ojt"]
 my=mydb["user_info"]
 @st.dialog("CHANGE PASSWORD")
