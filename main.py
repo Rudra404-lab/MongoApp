@@ -1,6 +1,6 @@
 import streamlit as st
 import pymongo
-from datetime inport date
+from datetime import date
 conn=pymongo.MongoClient("mongodb+srv://rudra1951:RudraPass05@cluster0.e1nvcku.mongodb.net/?appName=Cluster0")
 mydb=conn["ojt"]
 my=mydb["user_info"]
