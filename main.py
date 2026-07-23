@@ -1,15 +1,5 @@
 import streamlit as st
 import pymongo
-from pymongo.server_api import ServerApi
-uri = "mongodb+srv://rudra1951:RudraPass05@cluster0.e1nvcku.mongodb.net/?appName=Cluster0"
-# Create a new client and connect to the server
-client = pymongo(uri, server_api=ServerApi('1'))
-# Send a ping to confirm a successful connection
-try:
-    client.admin.command('ping')
-    print("Pinged your deployment. You successfully connected to MongoDB!")
-except Exception as e:
-    print(e)
 conn=pymongo.MongoClient("mongodb+srv://rudra1951:RudraPass05@cluster0.e1nvcku.mongodb.net/?appName=Cluster0")
 mydb=conn["ojt"]
 my=mydb["user_info"]
