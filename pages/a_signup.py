@@ -11,5 +11,5 @@ t3=st.text_input("Mobile Number")
 t4=st.text_input("Email Id")
 b1=st.button("SIGN UP")
 if b1:
-       my.insert_one({"uname":t1,"password":t2,"mobile":str(t3),"email":str(t4),"dob":str(t5)})
+       my.insert_one({"uname":t1,"password":t2,"mobile":str(t3),"email":str(t4)})
        st.success("✅ Sign Up Successfully")
