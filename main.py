@@ -13,11 +13,8 @@ except Exception as e:
 conn=pymongo.MongoClient("mongodb+srv://rudra1951:RudraPass05@cluster0.e1nvcku.mongodb.net/?appName=Cluster0")
 mydb=conn["ojt"]
 my=mydb["user_info"]
-
 st.title("🐍All the basic python code")
 st.snow()
-
-
 st.header("Welcome! Please Login First")
 t1=st.text_input("Username")
 t2=st.text_input("Password",type="password")
