@@ -1,7 +1,18 @@
 import streamlit as st
 import pymongo
-from datetime import date
-conn=pymongo.MongoClient("mongodb+srv://rudra1951:RudraPass05@cluster0.e1nvcku.mongodb.net/?appName=Cluster0")
+from urllib.parse import quote_plus
+
+username = quote_plus('<rudra1951>')
+password = quote_plus('<rudra2026799>')
+cluster = '<clusterName>'
+authSource = '<authSource>'
+authMechanism = '<authMechanism>'
+
+uri = 'mongodb+srv://' + rudra1951 + ':' + rudra2026799 + '@' + cluster + '/?authSource=' + authSource + '&authMechanism=' + authMechanism
+
+client = pymongo.MongoClient(uri)
+
+result = client["<dbName"]["<collName>"].find()
 mydb=conn["ojt"]
 my=mydb["user_info"]
 st.title("🐍All the basic python code")
