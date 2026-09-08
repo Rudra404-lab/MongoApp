@@ -2,13 +2,13 @@ import streamlit as st
 import pymongo
 from urllib.parse import quote_plus
 
-username = quote_plus('<rudra1951>')
-password = quote_plus('<rudra2026799>')
+username = quote_plus('<username>')
+password = quote_plus('<password>')
 cluster = '<clusterName>'
 authSource = '<authSource>'
 authMechanism = '<authMechanism>'
 
-uri = 'mongodb+srv://' + rudra1951 + ':' + rudra2026799 + '@' + cluster + '/?authSource=' + authSource + '&authMechanism=' + authMechanism
+uri = 'mongodb+srv://' + username + ':' + password + '@' + cluster + '/?authSource=' + authSource + '&authMechanism=' + authMechanism
 
 client = pymongo.MongoClient(uri)
 
